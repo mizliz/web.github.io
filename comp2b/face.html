@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Face Game</title>
+	<meta name="generator" content="BBEdit 8.7" />
+	<script type="text/javascript">
+
+heads=new Array();
+	heads[0]="../../../1_comp_2b_m_th/faces/heads/allerton.png";
+	heads[1]="../../../1_comp_2b_m_th/faces/heads/brickner.png";
+	heads[2]="../../../1_comp_2b_m_th/faces/heads/guerrieri.png";
+heads[3]="../../../1_comp_2b_m_th/faces/heads/jaygbay.png";
+heads[4]="../../../1_comp_2b_m_th/faces/heads/mecoy.png";
+heads[5]="../../../1_comp_2b_m_th/faces/heads/worthington.png";
+
+happyEyes=new Array();
+		happyEyes[0]="../../../1_comp_2b_m_th/faces/happyEyes/allerton.png";
+	happyEyes[1]="../../../1_comp_2b_m_th/faces/happyEyes/brickner.png";
+	happyEyes[2]="../../../1_comp_2b_m_th/faces/happyEyes/guerrieri.png";
+happyEyes[3]="../../../1_comp_2b_m_th/faces/happyEyes/jaygbay.png";
+happyEyes[4]="../../../1_comp_2b_m_th/faces/happyEyes/mecoy.png";
+happyEyes[5]="../../../1_comp_2b_m_th/faces/happyEyes/worthington.png";
+angryEyes=new Array();
+			angryEyes[0]="../../../1_comp_2b_m_th/faces/angryEyes/allerton.png";
+	angryEyes[1]="../../../1_comp_2b_m_th/faces/angryEyes/brickner.png";
+	angryEyes[2]="../../../1_comp_2b_m_th/faces/angryEyes/guerrieri.png";
+angryEyes[3]="../../../1_comp_2b_m_th/faces/angryEyes/jaygbay.png";
+angryEyes[4]="../../../1_comp_2b_m_th/faces/angryEyes/mecoy.png";
+angryEyes[5]="../../../1_comp_2b_m_th/faces/angryEyes/worthington.png";
+happyMouths=new Array();
+	happyMouths[0]="../../../1_comp_2b_m_th/faces/happyMouths/allerton.png";
+	happyMouths[1]="../../../1_comp_2b_m_th/faces/happyMouths/brickner.png";
+	happyMouths[2]="../../../1_comp_2b_m_th/faces/happyMouths/guerrieri.png";
+happyMouths[3]="../../../1_comp_2b_m_th/faces/happyMouths/jaygbay.png";
+happyMouths[4]="../../../1_comp_2b_m_th/faces/happyMouths/mecoy.png";
+happyMouths[5]="../../../1_comp_2b_m_th/faces/happyMouths/worthington.png";
+	angryMouths=new Array();
+	
+	angryMouths[0]="../../../1_comp_2b_m_th/faces/angryMouths/allerton.png";
+	angryMouths[1]="../../../1_comp_2b_m_th/faces/angryMouths/brickner.png";
+	angryMouths[2]="../../../1_comp_2b_m_th/faces/angryMouths/guerrieri.png";
+angryMouths[3]="../../../1_comp_2b_m_th/faces/angryMouths/jaygbay.png";
+angryMouths[4]="../../../1_comp_2b_m_th/faces/angryMouths/mecoy.png";
+angryMouths[5]="../../../1_comp_2b_m_th/faces/angryMouths/worthington.png";
+noses=new Array();
+	noses[0]="../../../1_comp_2b_m_th/faces/noses/allerton.png";
+	noses[1]="../../../1_comp_2b_m_th/faces/noses/brickner.png";
+	noses[2]="../../../1_comp_2b_m_th/faces/noses/guerrieri.png";
+noses[3]="../../../1_comp_2b_m_th/faces/noses/jaygbay.png";
+noses[4]="../../../1_comp_2b_m_th/faces/noses/mecoy.png";
+noses[5]="../../../1_comp_2b_m_th/faces/noses/worthington.png";
+hair=new Array();
+	hair[0]="../../../1_comp_2b_m_th/faces/hair/allerton.png";
+	hair[1]="../../../1_comp_2b_m_th/faces/hair/brickner.png";
+	hair[2]="../../../1_comp_2b_m_th/faces/hair/guerrieri.png";
+hair[3]="../../../1_comp_2b_m_th/faces/hair/jaygbay.png";
+hair[4]="../../../1_comp_2b_m_th/faces/hair/mecoy.png";
+hair[5]="../../../1_comp_2b_m_th/faces/hair/worthington.png";
+	
+	 function updateHappyMouths(){
+    rand=Math.floor(Math.random()*happyMouths.length)
+    document.getElementById("mouth").src=happyMouths[rand];
+    }
+function updateAngryMouths(){
+    rand=Math.floor(Math.random()*angryMouths.length)
+    document.getElementById("mouth").src=angryMouths[rand];
+}
+
+function updateNoses(){
+    rand=Math.floor(Math.random()*noses.length)
+    document.getElementById("nose").src=noses[rand];
+}
+function updateHeads(){
+    rand=Math.floor(Math.random()*heads.length)
+    document.getElementById("head").src=heads[rand];
+}
+function updateHair(){
+    rand=Math.floor(Math.random()*hair.length)
+    document.getElementById("hair").src=hair[rand];
+}
+	 function updateHappyEyes(){
+    rand=Math.floor(Math.random()*happyEyes.length)
+    document.getElementById("eyes").src=happyEyes[rand];
+    }
+function updateAngryEyes(){
+    rand=Math.floor(Math.random()*angryEyes.length)
+    document.getElementById("eyes").src=angryEyes[rand];
+}
+function getAngry(){
+    updateAngryEyes();
+    updateAngryMouths();
+    updateHeads();
+   updateHair();
+   updateNoses();
+    }
+    
+    function getHappy(){
+    updateHappyEyes();
+    updateHappyMouths();
+    updateHeads();
+   updateHair();
+   updateNoses();
+    }
+    function getFace(){
+    if(Math.random()<.5){
+    getHappy();
+    }else{
+    getAngry();
+    }
+}
+
+ </script>   
+</head>
+<body onload="getFace();return true;">
+<div><!-- By setting action to # the page reloads itself when a button is clicked-->
+
+ <form id="face" method="post" action="#" >
+    <div>
+    <input type="button" value="angry" onclick="getAngry();return true;" />
+    <br />
+    <input type="button" value="happy" onclick="getHappy();return true;" />
+    <br />
+    <input type="button" value="heads" onclick="updateHeads();return true;" />
+    <br />
+    <input type="button" value="nose" onclick="updateNoses();return true;" />
+    <br />
+    <input type="button" value=" angry mouths" onclick="updateAngryMouths();return true;" />
+    <br />
+    <input type="button" value=" happy mouths" onclick="updateHappyMouths();return true;" />
+     <br />
+    <input type="button" value=" happy eyes" onclick="updateHappyEyes();return true;" />
+    <br />
+    <input type="button" value=" angry eyes" onclick="updateAngryEyes();return true;" />
+  <br />
+    <input type="button" value="hair" onclick="updateHair();return true;" />
+    <br />
+   </div>
+</form>
+ 
+<!-- the following places all the images on the page-->
+<img src="" alt="" id="head" style="padding:0em;position:absolute;top:150px;left:290px;" />
+<img src="" alt="" id="eyes" style="padding:0em;position:absolute;top:270px;left:300px;" />
+<img src="" alt="" id="nose" style="padding:0em;position:absolute;top:430px;left:300px;" />
+<img src="" alt="" id="mouth" style="padding:0em;position:absolute;top:490px;left:300px;" />
+<img src="" alt="" id="hair" style="padding:0em;position:absolute;top:30px;left:220px;"  /></div>
+</body>
+</html>
